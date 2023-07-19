@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/standings"
+    app:startDestination="@id/standingsFragment2">
+
+    <fragment
+        android:id="@+id/standingsFragment2"
+        android:name="by.zharikov.bestfootball.presentation.standings.StandingsFragment"
+        android:label="StandingsFragment" >
+        <action
+            android:id="@+id/action_standingsFragment2_to_detailFragment3"
+            app:destination="@id/detailFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment3"
+        android:name="by.zharikov.bestfootball.presentation.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>

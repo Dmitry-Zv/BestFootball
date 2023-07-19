@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live"
+    app:startDestination="@id/liveFragment2">
+
+    <fragment
+        android:id="@+id/liveFragment2"
+        android:name="by.zharikov.bestfootball.presentation.live.LiveFragment"
+        android:label="LiveFragment" >
+        <action
+            android:id="@+id/action_liveFragment2_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="by.zharikov.bestfootball.presentation.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
